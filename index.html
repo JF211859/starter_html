@@ -5,49 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lexend">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/zoom.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" href="images/peticon.jpg">
 
     <title>Pets</title>
 </head>
 
 <header>
-    <h1>
+    <h1 id = "pets-header">
         Pets
     </h1>
 
 </header>
 
 <body>
-    <a href = "./#Leo" class = "skip-button">Skip to Main Content</a>
-    <hr>
-    <nav>
-        <ul>
-            <li><a href="index.html#main" class = "current-navigation">Pets</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="travel.html">Travel</a></li>
-        </ul>
-    </nav>
-    <hr>
-    <nav>
-        <ul>
-            <li><a href="./#Leo" class = "local-nav">Leo</a></li>
-            <li><a href="./#Chief" class = "local-nav">Chief</a></li>
-            <li><a href="./#Riley" class = "local-nav">Riley</a></li>
-            <li><a href="./Bacon" class = "local-nav">Bacon</a></li>
-            <li><a href="./#Cheeto" class = "local-nav">Cheeto</a></li>
-        </ul>
-    </nav>
+    <div class = "nav-container">
+        <a href = "./#Leo" class = "skip-button">Skip to Main Content</a>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html#main" class = "current-navigation">Pets</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="travel.html">Travel</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="./#Leo" class = "local-nav">Leo</a></li>
+                <li><a href="./#Chief" class = "local-nav">Chief</a></li>
+                <li><a href="./#Riley" class = "local-nav">Riley</a></li>
+                <li><a href="./#Bacon" class = "local-nav">Bacon</a></li>
+                <li><a href="./#Cheeto" class = "local-nav">Cheeto</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </div>
     <div>
         <h2  id="Leo" class="primary">Leo</h2>
-        <img src="images/Leo_primary_photo.png" data-action="zoom" class = "primary-image" alt="Guinea pig doing his best to smile for the camera" width="400">
-        <p>
-            Guinea pigs are a naturally energetic animal, who spend up to 20 hours a day awake. Despite being awake for long periods of time, they naturally hide in their habitats, and can be difficult to see in their inclosures.  Guinea pigs naturally are social creatures that enjoy socializing with other guinea pigs, in the wild they form packs of five to ten.
-        </p>
-        <p>
-            Leo is a half-lazy, half-lively guinea pig that either likes to run around on the floor, doing tiny hops, or likes to lay down in the cage for hours at a time nibbling at hay. His favorite hobby is eating, and he can tell whenever someone is about to give good to him by waiting at the end of the cardboard box patio he has attached to his cage.
-        </p>
+        <div class = "primary-container">
+            <div class = "photo-container">
+                <img src="images/Leo_primary_photo.png" data-action="zoom" class = "primary-image" alt="Guinea pig doing his best to smile for the camera" width="400">
+            </div>
+
+            <div class = "paragraph-container">
+                <audio controls>
+                    <source src = "audio/petstts1.mp3" type="audio/mpeg">
+                </audio>
+                <p>
+                    Guinea pigs are a naturally energetic animal, who spend up to 20 hours a day awake. Despite being awake for long periods of time, they naturally hide in their habitats, and can be difficult to see in their inclosures.  Guinea pigs naturally are social creatures that enjoy socializing with other guinea pigs, in the wild they form packs of five to ten.
+                    Leo is a half-lazy, half-lively guinea pig that either likes to run around on the floor, doing tiny hops, or likes to lay down in the cage for hours at a time nibbling at hay. His favorite hobby is eating, and he can tell whenever someone is about to give good to him by waiting at the end of the cardboard box patio he has attached to his cage.
+                </p>
+            </div>
+        </div>
+
+
         <h3>Photo Gallery</h3>
         <div class = "photo-gallery">
             <img data-action="zoom" src="images/Leo_greens.jpg" alt="Leo enjoying leafy" class="secondary" width="200">
@@ -66,13 +82,21 @@
     <hr>
     <div>
         <h2 id = "Chief" class="primary">Chief</h2>
-        <img data-action="zoom" src="images/cheif.png" class = "primary-image" alt="Pomeranian looking at camera with head bowed" width="400">
-        <p>
-            Chief is a 9 year old pomeranian who loves to sleep as much as he can. He naps anywhere, ranging from someone's bed to the grass outside. He enjoys walking outside, but keep watch of him, otherwise he will try to consume geese poop.
-        </p>
-        <p>
-            He does not like any toys anymore as when he was younger, he watched a bigger toy shred his favorite one to pieces. He used to know how to roll over, but now replaced that memory with a spin as it is much easier.
-        </p>
+        <div class = "primary-container">
+            <div class = "photo-container">
+                <img data-action="zoom" src="images/cheif.png" class = "primary-image" alt="Pomeranian looking at camera with head bowed" width="400">
+            </div>
+
+            <div class = "paragraph-container">
+                <audio controls>
+                    <source src = "audio/petstts2.mp3" type="audio/mpeg">
+                </audio>
+                <p>
+                    Chief is a 9 year old pomeranian who loves to sleep as much as he can. He naps anywhere, ranging from someone's bed to the grass outside. He enjoys walking outside, but keep watch of him, otherwise he will try to consume geese poop.
+                    He does not like any toys anymore as when he was younger, he watched a bigger toy shred his favorite one to pieces. He used to know how to roll over, but now replaced that memory with a spin as it is much easier.
+                </p>
+            </div>
+        </div>
         <h3>Photo Gallery</h3>
         <div class = "photo-gallery">
             <img data-action="zoom" src="images/chief_cone.jpg" alt="Caramel pomeranian in a plastic cone of shame" width="200">
@@ -91,13 +115,21 @@
     <hr>
     <div>
         <h2 id = "Riley" class="primary">Riley</h2>
-        <img data-action="zoom" src="images/Riley_primary.png" class = "primary-image" alt="Apricot goldendoodle wearing blue bandana lying next to ball" width="400">
-        <p>
-            Riley is a 2yr old goldendoodle. He is very active and loves attention. Riley can be pretty mischievous; as such, his favorite activity is begging for (or stealing) food, however getting cuddled on a cool floor comes as a close second. In addition, Riley loves to walk in his local park or hang out with his best friend Cosmo.
-        </p>
-        <p>
-            Riley would NOT survive in the wild. He is very stubborn, jealous, and pampered. He’s currently in his “terrible twos,” and must get everything his way. That said, Riley is loved by his family as a perfect, funny, and loyal dog.
-        </p>
+        <div class = "primary-container">
+            <div class = "photo-container">
+                <img data-action="zoom" src="images/Riley_primary.png" class = "primary-image" alt="Apricot goldendoodle wearing blue bandana lying next to ball" width="400">
+            </div>
+
+            <div class = "paragraph-container">
+                <audio controls>
+                    <source src = "audio/petstts3.mp3" type="audio/mpeg">
+                </audio>
+                <p>
+                    Riley is a 2yr old goldendoodle. He is very active and loves attention. Riley can be pretty mischievous; as such, his favorite activity is begging for (or stealing) food, however getting cuddled on a cool floor comes as a close second. In addition, Riley loves to walk in his local park or hang out with his best friend Cosmo.
+                    Riley would NOT survive in the wild. He is very stubborn, jealous, and pampered. He’s currently in his “terrible twos,” and must get everything his way. That said, Riley is loved by his family as a perfect, funny, and loyal dog.
+                </p>
+            </div>
+        </div>
         <h3>Photo Gallery</h3>
         <div class = "photo-gallery">
             <img data-action="zoom" src="images/riley_sleeping.jpg" alt="Goldendoodle peacefully resting on their dog bed" width="200">
@@ -116,13 +148,21 @@
     <hr>
     <div>
         <h2 id = "Bacon" class="primary">Bacon Q Dog</h2>
-        <img data-action="zoom" src="images/bacon.png" class = "primary-image" alt="Brown labradoodle wearing colorful lei" width="400">
-        <p>
-            Bacon Q. Dog is a 9yr old labradoodle.  He prefers to spend his days lounging among the three different beds/couches that his family has gifted him.  He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.
-        </p>
-        <p>
-            At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy.  He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride."  There is also a lot of rolling.  Lots and lots of rolling.
-        </p>
+        <div class = "primary-container">
+            <div class = "photo-container">
+                <img data-action="zoom" src="images/bacon.png" class = "primary-image" alt="Brown labradoodle wearing colorful lei" width="400">
+            </div>
+
+            <div class = "paragraph-container">
+                <audio controls>
+                    <source src = "audio/petstts4.mp3" type="audio/mpeg">
+                </audio>
+                <p>
+                    Bacon Q. Dog is a 9yr old labradoodle.  He prefers to spend his days lounging among the three different beds/couches that his family has gifted him.  He enjoys a walk or two around the neighborhood, as long as he can pretend that he doesn't see any of the other animals to avoid the embarrassment of not wanting to admit he has no wolf-like skills in chasing them.
+                    At night just as the rest of the family is ready to relax, Bacon suddenly wants to release all of his energy.  He will place his toys on a mini couch and frantically drag the couch around, giving his toys "a ride."  There is also a lot of rolling.  Lots and lots of rolling.
+                </p>
+            </div>
+        </div>
         <h3>Photo Gallery</h3>
         <div class = "photo-gallery">
             <img data-action="zoom" src="images/bacon_bandana.JPG" alt="Brown labradoodle wearing an orange bandana" width="200">
@@ -144,13 +184,21 @@
     <hr>
     <div>
         <h2 id = "Cheeto" class="primary">Cheeto (Chicken)</h2>
-        <img data-action="zoom" src="images/cheeto_cattree.png" class = "primary-image" alt="Orange cat hanging paws off a cat tower" width="400">
-        <p>
-            Cheeto is a cat who likes to eat a lot and play a lot. He has an obsession with his grandpa (human) and tries to get outside every single day. If he isn’t causing problems, he is usually hiding in a seven foot tall cat tree and sleeping.
-        </p>
-        <p>
-            Another name for Cheeto is Chicken, because sometimes he sits very scrunched up and ends up looking like a rotisserie chicken. He was nicknamed this by one of his friends, and now he understands it as his own name. He is about six years old and still acts like a younger cat, despite being middle-aged.
-        </p>
+        <div class = "primary-container">
+            <div class = "photo-container">
+                <img data-action="zoom" src="images/cheeto_cattree.png" class = "primary-image" alt="Orange cat hanging paws off a cat tower" width="400">
+            </div>
+
+            <div class = "paragraph-container">
+                <audio controls>
+                    <source src = "audio/petstts5.mp3" type="audio/mpeg">
+                </audio>
+                <p>
+                    Cheeto is a cat who likes to eat a lot and play a lot. He has an obsession with his grandpa (human) and tries to get outside every single day. If he isn’t causing problems, he is usually hiding in a seven foot tall cat tree and sleeping.
+                    Another name for Cheeto is Chicken, because sometimes he sits very scrunched up and ends up looking like a rotisserie chicken. He was nicknamed this by one of his friends, and now he understands it as his own name. He is about six years old and still acts like a younger cat, despite being middle-aged.
+                </p>
+            </div>
+        </div>
         <h3>Photo Gallery</h3>
         <div class = "photo-gallery">
             <img data-action="zoom" src="images/cheeto_carpet.jpg" alt="Cheeto laying sideways on the carpet" width="200">
